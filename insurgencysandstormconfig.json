@@ -303,6 +303,21 @@
         "SkipIfEmpty": true
     },
     {
+        "DisplayName": "ModIO Security Code",
+        "Category": "Insurgency Sandstorm:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Set the ModIO Security Code - Only needed ONCE at the first start of the Server",
+        "Keywords": "Stats",
+        "FieldName": "ModioToken",
+        "InputType": "password",
+        "IsFlagArgument": false,
+        "ParamFieldName": "ModioToken",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {},
+        "SkipIfEmpty": true
+    },
+    {
         "DisplayName": "Password",
         "Category": "Insurgency Sandstorm:stadia_controller",
         "Subcategory": "Server:dns:1",
