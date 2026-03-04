@@ -313,7 +313,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "ModioToken",
         "IncludeInCommandLine": false,
-        "DefaultValue": "",
+        "DefaultValue": "none",
         "EnumValues": {},
         "SkipIfEmpty": true
     },
