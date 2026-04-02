@@ -458,6 +458,23 @@
         }
     },
     {
+        "DisplayName": "Disable Easy Anti Cheat",
+        "Category": "Insurgency Sandstorm:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Disable Anti-Cheat Protection",
+        "Keywords": "anti cheat",
+        "FieldName": "NoEAC",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "NoEAC",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {
+            "False": "",
+            "True": "-NoEAC "
+        }
+    },
+    {
         "DisplayName": "Map Cycle",
         "Description": "A List of map scenarios for the server to use",
         "FieldName": "MapCycle",
