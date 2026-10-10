@@ -27,13 +27,13 @@
         "DisplayName": "Server Mod Name",
         "Category": "Jedi Knight Academy:stadia_controller",
         "Subcategory": "Server:dns:1",
-        "Description": "Sets the name of the mod directory to load, allowing the use of third-party JKA mods. Don't change this from the default 'base' unless you know what you are doing!",
-        "Keywords": "server,mod,directory,game",
+        "Description": "Sets the name of the mod directory (fs_game) to load. 'taystjk' is the bundled jaPRO game module. Use 'base' for the stock game module, or another directory (e.g. 'japlus') if you install a different module there.",
+        "Keywords": "server,mod,directory,game,fs_game",
         "FieldName": "mod",
         "InputType": "text",
         "ParamFieldName": "mod",
-        "DefaultValue": "base",
-        "Placeholder": "base",
+        "DefaultValue": "taystjk",
+        "Placeholder": "taystjk",
         "EnumValues": {}
     },
     {
@@ -285,6 +285,74 @@
             "False": "0",
             "True": "1"
         }
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        },
+        "DisplayName": "HTTP Downloads",
+        "Description": "Allow clients to download missing files over HTTP. Requires 'Allow Download From Server'. Requires a server restart to change.",
+        "Keywords": "http,download,sv_httpdownloads",
+        "FieldName": "sv_httpDownloads",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_httpDownloads",
+        "DefaultValue": "0"
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {},
+        "DisplayName": "HTTP Download Port",
+        "Description": "TCP port of the built-in HTTP download server (sv_httpServerPort). Keep in sync with the 'HTTP Download Port' in the Ports section. Requires a server restart to change.",
+        "Keywords": "http,download,port,sv_httpserverport",
+        "FieldName": "sv_httpServerPort",
+        "InputType": "number",
+        "ParamFieldName": "sv_httpServerPort",
+        "DefaultValue": "18200"
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {},
+        "DisplayName": "Full Admin Password",
+        "Description": "Password for in-game full admin login (amLogin). Leave empty to disable.",
+        "Keywords": "admin,password,g_fulladminpass",
+        "FieldName": "g_fullAdminPass",
+        "InputType": "Password",
+        "ParamFieldName": "g_fullAdminPass",
+        "DefaultValue": ""
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {},
+        "DisplayName": "Junior Admin Password",
+        "Description": "Password for in-game junior admin login (amLogin). Leave empty to disable.",
+        "Keywords": "admin,password,g_junioradminpass",
+        "FieldName": "g_juniorAdminPass",
+        "InputType": "Password",
+        "ParamFieldName": "g_juniorAdminPass",
+        "DefaultValue": ""
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {
+            "0": "Disabled",
+            "1": "Register accounts",
+            "2": "Register and join clans",
+            "3": "Register, join and create clans"
+        },
+        "DisplayName": "Account Registration",
+        "Description": "Controls jaPRO player accounts and clans.",
+        "Keywords": "account,registration,clan,g_allowregistration",
+        "FieldName": "g_allowRegistration",
+        "InputType": "enum",
+        "ParamFieldName": "g_allowRegistration",
+        "DefaultValue": "1"
     },
     {
         "DisplayName": "Server FPS",

@@ -5,5 +5,12 @@
         "Ref": "ServerPort",
         "Name": "Server Port",
         "Description": "Port for game and RCON traffic"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 18200,
+        "Ref": "HTTPDownloadPort",
+        "Name": "HTTP Download Port",
+        "Description": "Port for the built-in HTTP file download server (sv_httpServerPort)"
     }
 ]

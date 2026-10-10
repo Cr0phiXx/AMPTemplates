@@ -1,14 +1,5 @@
 [
     {
-        "UpdateStageName": "SteamCMD Game Files Download",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "6020",
-        "UpdateSourceTarget": "{{$FullRootDir}}client",
-        "ForceDownloadPlatform": "Windows",
-        "SkipOnFailure": false
-    },
-    {
         "UpdateStageName": "Create Base Directory",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "CreateDirectory",
@@ -16,27 +7,11 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "Client File Copy",
-        "UpdateSourcePlatform": "Windows",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C xcopy /E /Y /I jka\\client\\GameData\\base\\assets*.pk3 jka\\server\\base\\ && rmdir /Q /S jka\\client\\",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "Client File Copy",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\cp -rf ./jka/client/GameData/base/assets*.pk3 ./jka/server/base/ && rm -rf ./jka/client/\"",
-        "SkipOnFailure": false
-    },
-    {
-        "UpdateStageName": "OpenJK Download",
+        "UpdateStageName": "TaystJK Download",
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "GithubRelease",
-        "UpdateSourceArgs": "JACoders/OpenJK",
-        "UpdateSourceData": "OpenJK-windows-x86_64.zip",
+        "UpdateSourceArgs": "taysta/TaystJK",
+        "UpdateSourceData": "TaystJK-windows-x86_64.zip",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
@@ -44,11 +19,11 @@
         "SkipOnFailure": false
     },
     {
-        "UpdateStageName": "OpenJK Download",
+        "UpdateStageName": "TaystJK Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "GithubRelease",
-        "UpdateSourceArgs": "JACoders/OpenJK",
-        "UpdateSourceData": "OpenJK-linux-x86_64.tar.gz",
+        "UpdateSourceArgs": "taysta/TaystJK",
+        "UpdateSourceData": "TaystJK-linux-x86_64.tar.gz",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
@@ -61,7 +36,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://cdn-repo.c7rs.com/AMPTemplates/jedi-academyserver.cfg",
         "UpdateSourceArgs": "server.cfg",
-        "UpdateSourceTarget": "{{$FullBaseDir}}base",
+        "UpdateSourceTarget": "{{$FullBaseDir}}taystjk",
         "OverwriteExistingFiles": false,
         "SkipOnFailure": false
     }
