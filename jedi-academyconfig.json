@@ -340,6 +340,30 @@
     {
         "Category": "Jedi Knight Academy:stadia_controller",
         "Subcategory": "Server:dns:1",
+        "EnumValues": {},
+        "DisplayName": "Full Admin Level",
+        "Description": "Bitmask of admin rights granted by the Full Admin Password. 0 grants no rights. 8388607 grants every right (bits 0-22). Bits: 0 Teleport, 1 Freeze, 2 Telemark, 3 Ban, 4 Kick, 5 NPC, 6 Noclip, 7 Grant admin, 8 Change map, 9 Center print, 10 Force team, 11 Lock team, 12 Vstr, 13 See IP, 14 Rename, 15 List maps, 16 Whois, 17 Lookup, 18 No follow, 19 See hidden, 20 Callvote, 21 Kill vote, 22 Read AmSay.",
+        "Keywords": "admin,level,rights,bitmask,g_fulladminlevel",
+        "FieldName": "g_fullAdminLevel",
+        "InputType": "number",
+        "ParamFieldName": "g_fullAdminLevel",
+        "DefaultValue": "0"
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "EnumValues": {},
+        "DisplayName": "Junior Admin Level",
+        "Description": "Bitmask of admin rights granted by the Junior Admin Password. 0 grants no rights. Uses the same bits as the Full Admin Level (e.g. Kick = 16, Change map = 256, Kick + Change map + Read AmSay = 4194576).",
+        "Keywords": "admin,level,rights,bitmask,g_junioradminlevel",
+        "FieldName": "g_juniorAdminLevel",
+        "InputType": "number",
+        "ParamFieldName": "g_juniorAdminLevel",
+        "DefaultValue": "0"
+    },
+    {
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Server:dns:1",
         "EnumValues": {
             "0": "Disabled",
             "1": "Register accounts",

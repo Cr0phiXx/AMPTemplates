@@ -25,6 +25,8 @@
                     "set sv_httpServerPort": "sv_httpServerPort",
                     "set g_fullAdminPass": "g_fullAdminPass",
                     "set g_juniorAdminPass": "g_juniorAdminPass",
+                    "set g_fullAdminLevel": "g_fullAdminLevel",
+                    "set g_juniorAdminLevel": "g_juniorAdminLevel",
                     "set g_allowRegistration": "g_allowRegistration",
                     "set sv_fps": "sv_fps",
                     "set sv_minRate": "sv_minRate",
