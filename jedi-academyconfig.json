@@ -591,6 +591,21 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Automatic Map Cycle",
+        "Category": "Jedi Knight Academy:stadia_controller",
+        "Subcategory": "Gameplay:joystick:2",
+        "Description": "If enabled, the server picks the next map for the current gametype when a match ends. If disabled, the same map restarts.",
+        "Keywords": "map,cycle,rotation,autoMapCycle,g_autoMapCycle",
+        "FieldName": "g_autoMapCycle",
+        "InputType": "checkbox",
+        "ParamFieldName": "g_autoMapCycle",
+        "DefaultValue": "0",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
+    },
+    {
         "DisplayName": "Capture Limit",
         "Category": "Jedi Knight Academy:stadia_controller",
         "Subcategory": "Gameplay:joystick:2",
